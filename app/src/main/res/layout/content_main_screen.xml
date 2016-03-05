@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.richardmpanga.smartdrunk.MainScreen"
+    tools:showIn="@layout/activity_main_screen"
+    android:contextClickable="true"
+    android:weightSum="1">
+
+    <SearchView
+        android:background="#DEDEDE"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/searchView"
+        android:queryHint="Try &quot;Allagash White&quot;"
+        android:clickable="true"
+        android:contextClickable="true" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favs"
+            android:id="@+id/button"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Order"
+            android:id="@+id/button3"
+            android:layout_row="1"
+            android:layout_column="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Its Complicated"
+            android:id="@+id/button2"
+            android:layout_row="1"
+            android:layout_column="2" />
+    </GridLayout>
+
+    <FrameLayout
+        android:background="#05353F"
+        android:paddingBottom="20dp"
+        android:layout_width="347dp"
+        android:layout_height="355dp"
+        android:layout_weight="0.73">
+
+
+        <TextView
+            android:layout_width="217dp"
+            android:layout_height="49dp"
+            android:text="Hi, I would like, "
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:id="@+id/textView"
+            android:layout_gravity="left|top" />
+    </FrameLayout>
+
+</LinearLayout>
